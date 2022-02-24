@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:hover{
+  background-color: #f9f9f9;
+}
+
+a{
+  all: unset;
+}
+
+.link{
+  color: #1a73e8;
+  cursor: pointer;
+}
+
+.link:hover{
+  color: #0259cc;
+}
+
+input{
+  height: 35px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  border: 2px solid #c4c4c4;
+}
+
+.navbarItem{
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  background-color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navbarItem:hover{
+  background: #f9f9f9;
+  color: #1a73e8;
+  transition: .2s all;
+}
+
+@media (max-width: 1000px){
+  .navbarItem{
+    border: none;
+  }
+}
+
+.hidden{
+  display: none !important;
+}
+
+.alert-shown {
+  opacity: 1 !important;
+  color: black;
+  transition: all 250ms linear !important;
+  z-index: 10;
+}
+
+.alert-hidden {
+  opacity: 0 !important;
+  transition: all 250ms linear 2s !important;
+  z-index: -1;
+}
+
+
+/* MODAL STYLES */
+
+.popup-overlay{
+  background-color: rgb(0,0,0,.5);
+}
+
+.popup-content{
+  background-color: white;
+  border-radius: 25px;
+}
+
+.modal{
+  width: 350px;
+  height: 350px;
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.modal > .content {
+  padding: 10px 5px;
+  text-align: -webkit-center;
+  height: 60%;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}

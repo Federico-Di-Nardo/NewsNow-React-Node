@@ -1,0 +1,15 @@
+.errorContainer{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorImg{
+  font-size: 80px;
+}
+
+.errorText{
+  font-size: 25px;
+}

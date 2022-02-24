@@ -1,0 +1,46 @@
+.articleGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 50px;
+    padding: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+}
+
+.categorySelect{
+    cursor: pointer;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-family: inherit;
+    color: #4d4d4d;
+    border: thin solid rgba(77, 77, 77, 0.3);
+    height: 44px;
+}
+
+.mainContainer{
+    display: grid;
+}
+
+.optionsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.countrySelect{
+    align-self: center;
+    width: 300px;
+    justify-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.countrySelect button{
+    border-radius: 25px;
+}

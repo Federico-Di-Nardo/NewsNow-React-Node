@@ -1,0 +1,18 @@
+.spinner{
+    font-size: 50px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+.spinnerAnimation{
+    animation: spinnerAnimation 1s linear infinite;
+}
+
+@keyframes spinnerAnimation {
+    to{
+        transform: rotate(360deg);
+    }
+}

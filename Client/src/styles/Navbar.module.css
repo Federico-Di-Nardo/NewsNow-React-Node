@@ -1,0 +1,90 @@
+.navbar{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  /* position: fixed;
+  width: 100%;
+  z-index: 9; */
+}
+
+.navbarCenter{
+  display: flex;
+  height: 75px;
+  width: 300px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.navbarLeft{
+  width: 350px;
+}
+
+.navbarRight{
+  column-gap: 10px;
+  place-self: center;
+  float: right;
+  display: flex;
+  height: 75px;
+  align-items: stretch;
+  margin-right: 22px;
+}
+
+.navbarLeft .navbarItem{
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: none;
+}
+
+.navbarLeft .navbarItem:hover{
+  background-color: white;
+  color: #1a73e8;
+}
+
+.search{
+  align-self: center;
+}
+
+.navbarImg{
+  margin-left: 10px;
+}
+
+.navbarText{
+  padding-right: 10px;
+}
+
+.navbarText{
+  place-self: center;
+}
+
+.navbarLoginSmall{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .navbarLoginSmall{
+    display: block;
+  }
+
+  .navbarCenter{
+    width: 90%;
+  }
+
+  .navbarLeft{
+    display: none;
+  }
+
+  .navbarRight{
+    margin-bottom: 20px;
+  }
+
+  .navbar{
+    justify-content:center;
+  }
+
+  .loginComponent{
+    display: none;
+  }
+
+}

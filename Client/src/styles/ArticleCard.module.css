@@ -1,0 +1,92 @@
+.card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.45rem;
+    overflow: hidden;
+    height: 500px;
+}
+
+.cardImg:hover{
+    opacity: .7;
+    transition: .3s all;
+    cursor: pointer;
+    background-blend-mode: multiply;
+}
+
+.cardLi{
+    list-style: none;
+}
+
+.cardImg{
+    height: 200px;
+    width: 300px;
+}
+
+.cardBody{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.cardText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.05;
+    padding-bottom: 2px;
+}
+
+.cardTitle{
+    margin-bottom: 0.75rem;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 0;
+    color: #2844b5;
+    -webkit-line-clamp: 3;
+}
+
+.cardAuthor{
+    color: gray;
+    font-size: 15px;
+    -webkit-line-clamp: 1;
+}
+
+.cardDescription{
+    -webkit-line-clamp: 5;
+}
+
+.saveButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.saveButton:hover{
+    background-color: white;
+}
+
+.errorMessage{
+    color: black;
+    position: absolute;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

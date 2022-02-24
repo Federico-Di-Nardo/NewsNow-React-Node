@@ -1,0 +1,11 @@
+.searchContainer{
+  height: 30px;
+}
+
+.searchInput{
+  width: 300px;
+}
+
+.searchInput:focus, .searchInput:focus-visible{
+  border: 2px solid #c4c4c4;
+}
